@@ -1,7 +1,6 @@
 import tkinter as tk
 import random
 import pygame
-
 from PIL.ImageTk import PhotoImage
 
 def generate_key():
@@ -37,7 +36,7 @@ window.title("Key Generator")
 window.configure(bg='white')
 
 # Add a text input field to allow the user to enter the first part of the key
-generate_button = tk.Button(window, text="Enter any 8 digits ", font=("Arial Black", 15), bg='white')
+generate_button = tk.Button(window, text="Введите любые 8 цифр", font=("Arial Black", 15), bg='white')
 generate_button.pack(pady=20)
 
 text_field = tk.Entry(window, font=("Times New Roman", 20), bg='white')
@@ -45,7 +44,7 @@ text_field.pack(pady=70)
 
 # Add a start button to initiate the key generation process
 
-generate_button = tk.Button(window, text="GENERATE KEY", font=("Times New Roman", 20), bg='light blue', command=lambda: [generate_key()])
+generate_button = tk.Button(window, text="СГЕНЕРИРОВАТЬ КЛЮЧ", font=("Times New Roman", 20), bg='light blue', command=lambda: [generate_key()])
 generate_button.pack(pady=50)
 
 # Add a label to display the generated key
